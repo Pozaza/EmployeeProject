@@ -17,5 +17,11 @@ public class Main {
         utils.Remove("Крохина");
 
         utils.GetAll();
+
+        System.out.println("\nПосле изменения:\n");
+
+        utils.Edit("Арванян", new Employee("Арванян", "Сергей", "Алексеевич", LocalDate.of(1999, 1, 16)));
+
+        utils.GetAll();
     }
 }
